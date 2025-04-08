@@ -14,45 +14,45 @@ const testimonial: Testimonial = {
 
 export const TestimonialCard = () => {
   return (
-    <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden w-100% md:w-3/4 lg:w-3/4 xl:w-4/5 mx-auto my-10">
-      {/* Image */}
-      <div className="w-full md:w-1/2 h-[300px] md:h-auto relative">
-        <Image
-          src={testimonial.image}
-          alt={testimonial.name}
-          layout='fill'
-          objectFit="cover"
-          className="object-cover"
-        />
-      </div>
+    <div className='p-10 rounded-2xl overflow-hidden'>
 
-      {/* Text */}
-      <div className="w-full md:w-1/2 lg:w-1/2 xl:w-4/5 bg-[#53389E] text-white p-6 md:p-10 flex flex-col justify-between">
-        <div className="flex flex-col gap-4">
-          {/* Stars */}
-          <div className="flex gap-1 text-yellow-400">
-            {[...Array(5)].map((_, i) => (
-              <StarIcon key={i} className="h-5 w-5" />
-            ))}
+      <div className="flex flex-col w-full h-[20rem] md:h-[25rem] lg:h-[25rem] xl:h-[25rem] md:flex-row rounded-2xl my-10">
+        {/* Image */}
+        <div className="w-full w-1/2 md:h-auto relative overflow-hidden rounded-l-2xl">
+          <Image
+            src={testimonial.image}
+            alt={testimonial.name}
+            layout='fill'
+            objectFit="cover"
+            className="object-cover"
+          />
+        </div>
+        {/* Text */}
+        <div className="flex flex-col justify-center overflow-hidden rounded-r-2xl gap-4 w-full md:w-1/2 lg:w-4/5 xl:w-4/5 bg-[#53389E] text-white p-6 md:p-10">
+            {/* Stars */}
+            <div className="flex gap-1 text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <StarIcon key={i} className="h-5 w-5" />
+              ))}
+            </div>
+
+            {/* Message */}
+            <p className="text-2xl md:text-xl lg:text-2xl xl:text-3xl ">
+              {testimonial.message}
+            </p>
+
+          {/* Author */}
+          <div className="mt-6">
+            <p className="text-sm font-semibold">{`— ${testimonial.name}`}</p>
+            <p className="text-sm text-white/80">{testimonial.role}</p>
           </div>
 
-          {/* Message */}
-          <p className="text-lg md:text-xl font-medium leading-relaxed">
-            {testimonial.message}
-          </p>
-        </div>
-
-        {/* Author */}
-        <div className="mt-6">
-          <p className="text-sm font-semibold">{`— ${testimonial.name}`}</p>
-          <p className="text-sm text-white/80">{testimonial.role}</p>
-        </div>
-
-        {/* Pagination dots */}
-        <div className="flex gap-2 mt-6">
-          <span className="h-2 w-2 rounded-full bg-white/70" />
-          <span className="h-2 w-2 rounded-full bg-white/30" />
-          <span className="h-2 w-2 rounded-full bg-white/30" />
+          {/* Pagination dots */}
+          <div className="flex gap-2 mt-6">
+            <span className="h-2 w-2 rounded-full bg-white/70" />
+            <span className="h-2 w-2 rounded-full bg-white/30" />
+            <span className="h-2 w-2 rounded-full bg-white/30" />
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ export const PrincipalCard = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="mt-10 flex flex-col items-center w-full rounded-xl bg-[#53389E] border gap-6 px-4 py-10 md:py-16 lg:h-[60%] xl:h-[30rem]">
+      <div className="mt-10 flex flex-col items-center w-full rounded-xl bg-[#53389E] gap-6 px-4 py-10 md:py-16 lg:h-[60%] xl:h-[30rem]">
         <div className="flex flex-col items-center justify-center gap-6 w-full max-w-3xl">
           {/* Title */}
           <div className="text-center">

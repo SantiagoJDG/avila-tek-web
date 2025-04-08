@@ -30,7 +30,7 @@ export const Features = () => {
     <section className="my-10 px-4 sm:px-6">
       {/* Title + Description */}
       <div className="flex flex-col items-center justify-center gap-6 text-center mb-10 max-w-4xl mx-auto">
-        <p className="text-3xl font-bold">
+        <p className="text-3xl font-semibold">
           Cutting-edge features for advanced analytics
         </p>
         <p className="text-gray-500 text-sm sm:text-base md:text-lg px-2 sm:px-6 lg:px-8">
@@ -47,7 +47,7 @@ export const Features = () => {
           >
             <div>{feature.icon}</div>
 
-            <p className="font-bold text-sm sm:text-base md:text-lg px-4">
+            <p className="font-semibold text-sm sm:text-base md:text-lg px-4">
               {feature.name}
             </p>
 
