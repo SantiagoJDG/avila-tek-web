@@ -1,6 +1,11 @@
+'use client'
+
 import { PrimaryButton } from "@/components/shared/Buttons/PrimaryButton/PrimaryButton";
+import { Chart } from "@/components/shared/Charts/LineChart";
+import { PieChartHome } from "@/components/shared/Charts/PieChart";
 
 export const PrincipalCard = () => {
+
   return (
     <>
 
@@ -42,26 +47,18 @@ export const PrincipalCard = () => {
 
       <div className="flex justify-center md:-mt-8 lg:-mt-12 xl:-mt-18 px-4">
         <div className="w-full max-w-[800px] p-6 sm:p-10 sm: bg-white border border-[#EAECF0] rounded-xl shadow-[0px_24px_48px_-12px_#1018282E]">
-          <h2 className="text-lg sm:text-xl font-semibold mb-4">Card Title</h2>
-          <p className="text-gray-600 text-sm sm:text-base">
-            This is your responsive card content based on the Figma design.
-          </p>
-           <h2 className="text-lg sm:text-xl font-semibold mb-4">Card Title</h2>
-          <p className="text-gray-600 text-sm sm:text-base">
-            This is your responsive card content based on the Figma design.
-                  </p>
-           <h2 className="text-lg sm:text-xl font-semibold mb-4">Card Title</h2>
-          <p className="text-gray-600 text-sm sm:text-base">
-            This is your responsive card content based on the Figma design.
-          </p>
+          <Chart />
         </div>
       </div>
 
       <div className="flex justify-center -mt-16">
         <div className="flex items-center justify-end px-4 w-full max-w-[900px]">
-          <div className="w-[120px] sm:w-[170px] h-[120px] sm:h-[170px] rounded-full p-6 bg-purple-500 flex items-center justify-center gap-10" />
+          <div className="w-[120px] sm:w-[170px] h-[120px] sm:h-[170px] xl:w-[40%] rounded-full p-6 flex items-center justify-center">
+              <PieChartHome />
+          </div>
         </div>
       </div>
+
     </>
   );
 };
