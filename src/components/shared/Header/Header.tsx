@@ -16,7 +16,7 @@ export const Header = () => {
       href: '#',
       icon: <ChevronDownIcon className="h-4 w-4" />,
     },
-    { name: '', href: '#' },
+    { name: 'Pricing', href: '#' },
   ];
 
   return (
@@ -31,7 +31,7 @@ export const Header = () => {
           {navigation.map((option, index) => (
             <div key={index} className="flex items-center gap-2">
               <a
-                className="text-base leading-6 font-inter text-gray-700 hover:text-gray-900 transition"
+                className="text-base leading-6 font-inter bold text-gray-700 hover:text-gray-900 transition"
                 href={option.href}
               >
                 {option.name}
