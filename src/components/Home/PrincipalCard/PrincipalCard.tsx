@@ -3,6 +3,7 @@
 import { PrimaryButton } from "@/components/shared/Buttons/PrimaryButton/PrimaryButton";
 import { Chart } from "@/components/shared/Charts/LineChart";
 import { PieChartHome } from "@/components/shared/Charts/PieChart";
+import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 
 export const PrincipalCard = () => {
 
@@ -30,11 +31,16 @@ export const PrincipalCard = () => {
           <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
             <div className="flex flex-col">           
               <div className="flex flex-row gap-4">
+                <div className="flex w-full flex-wrap sm:w-[335px] h-12 border border-gray-300 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#7F56D9]">
                   <input
                     type="text"
                     placeholder="Enter your email"
-                    className="w-full sm:w-[335px] h-12 px-[14px] py-[14px] border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#7F56D9]"
+                    className="flex-1 px-[14px] py-[14px] text-sm focus:outline-none"
                   />
+                  <div className="flex items-center justify-center px-3 bg-white">
+                    <QuestionMarkCircleIcon className="w-5 h-5 text-gray-400" />
+                  </div>
+                </div>
                   <PrimaryButton content="Get started" />
               </div>
                 <p className="text-xs text-[#E9D7FE] mt-2">
@@ -51,10 +57,10 @@ export const PrincipalCard = () => {
         </div>
       </div>
 
-      <div className="flex justify-center -mt-16">
+      <div className="hidden sm:flex justify-center -mt-16">
         <div className="flex items-center justify-end px-4 w-full max-w-[900px]">
-          <div className="w-[120px] sm:w-[170px] h-[120px] sm:h-[170px] xl:w-[40%] rounded-full p-6 flex items-center justify-center">
-              <PieChartHome />
+          <div className="w-[170px] h-[120px] sm:h-[170px] lg:w-[40%] xl:w-[40%] flex items-center">
+            <PieChartHome />
           </div>
         </div>
       </div>
