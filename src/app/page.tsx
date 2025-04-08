@@ -1,11 +1,17 @@
 import { PrincipalCard } from "@/components/Home/PrincipalCard";
 import { IntegrationTools } from "@/components/Home/IntegrationTools";
+import { DataPower } from "@/components/Home/DataPower";
+import { Features } from "@/components/Home/Fetaures";
+import { TestimonialCard } from "@/components/Home/TestimonialCard";
 
 export default function Home() {
   return (
     <>
       <PrincipalCard />
-      <IntegrationTools/>
+      <IntegrationTools />
+      <DataPower />
+      <Features />
+      <TestimonialCard />
     </>
   );
 }
