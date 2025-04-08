@@ -4,8 +4,8 @@ import { Header } from "@/components/shared/Header";
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Ecolect",
-  description: "Ecolect is a organization that helps to save the environment.",
+  title: "Avila Tek",
+  description: "Avila Tek - Your Trusted Technology Partner",
 };
 
 export default function RootLayout({
