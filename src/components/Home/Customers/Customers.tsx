@@ -68,7 +68,6 @@ export const Customers = () => {
                             className="object-cover"
                           />
 
-                          {/* Bottom half blurred content with margin */}
                           <div className="absolute bottom-0 left-0 w-full px-5 pb-5">
                             <div className="bg-black/40 backdrop-blur-sm text-white p-5 ">
                               {customer.quote && (
