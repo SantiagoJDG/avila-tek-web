@@ -4,6 +4,7 @@ import { DataPower } from "@/components/Home/DataPower";
 import { Features } from "@/components/Home/Fetaures";
 import { TestimonialCard } from "@/components/Home/TestimonialCard";
 import { Trial } from "@/components/Home/Trial";
+import { FrequentQuestions } from "@/components/Home/FrequentQuestions";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <TestimonialCard />
       <Trial />
+      <FrequentQuestions />
     </>
   );
 }

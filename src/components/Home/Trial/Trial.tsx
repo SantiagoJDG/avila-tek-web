@@ -7,11 +7,11 @@ import person5 from '@/assets/image-5.jpeg'
 
 export const Trial = () => {
   return (
-    <section className="w-full bg-gray-50 py-16 px-4">
+    <div className="w-full bg-gray-50 py-16 px-10">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left Text Section */}
         <div className="text-center md:text-left space-y-6 ml-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-gray-900">
             No long-term contracts.<br />No catches.
           </h2>
           <p className="text-gray-600 text-lg">
@@ -76,6 +76,6 @@ export const Trial = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

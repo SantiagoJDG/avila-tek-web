@@ -18,7 +18,7 @@ export const TestimonialCard = () => {
 
       <div className="flex flex-col w-full h-[20rem] md:h-[25rem] lg:h-[25rem] xl:h-[25rem] md:flex-row rounded-2xl my-10">
         {/* Image */}
-        <div className="w-full w-1/2 md:h-auto relative overflow-hidden rounded-l-2xl">
+        <div className="w-2/3 md:h-auto relative overflow-hidden rounded-l-2xl">
           <Image
             src={testimonial.image}
             alt={testimonial.name}
