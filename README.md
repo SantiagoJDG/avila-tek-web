@@ -1,10 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Avila Tek Frontend asssessment
 
-## Getting Started
+Vercel URL : https://avila-tek-web.vercel.app/
 
-First, run the development server:
+Para correr el proyecto:
 
 ```bash
+npm install || pnpm install
+
 npm run dev
 # or
 yarn dev
@@ -14,23 +16,41 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) .
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Este proyecto está desarrollado utilizando Next.js, TypeScript y React. La estructura del proyecto ha sido diseñada con una clara filosofía de atomicidad y reutilización de componentes para garantizar un código limpio, escalable y fácil de mantener. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
 
-## Learn More
+La carpeta app/ se utiliza para gestionar la estructura de nuestro landing page.
+Aquí puedes colocar el código relacionado con la configuración de la aplicación,
+rutas principales o gestión de estado global, dependiendo de tus necesidades.
+En nuestro caso, ordenamos los componentes segun los queremosver renderizado
 
-To learn more about Next.js, take a look at the following resources:
+```
+```
+components/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+La carpeta components/ contiene todos los componentes reutilizables de la aplicación.
+Está subdividida en dos carpetas principales: home y shared.
+```
+```
+components/home/
+Aquí se encuentran los componentes específicos para nuestra landing.
+Estos componentes son independientes y están diseñados para representar secciones individuales.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+components/shared
+Esta carpeta contiene componentes genéricos o comunes que se utilizan a través de toda la aplicación.
+Lo suficientemente abstractas para que se puedan inyectar acorde a su contexto
+```
 
-## Deploy on Vercel
+## Decisiones Arquitectónicas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Atomicidad y Reutilización de Componentes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+La estructura de componentes se ha diseñado siguiendo el principio de atomicidad, es decir, dividiendo la interfaz de usuario en componentes pequeños y reutilizables. Esto permite una gestión eficiente de la interfaz y facilita el mantenimiento y las actualizaciones.
+
+## Optimización para Reutilización
+
+Cada componente ha sido diseñado para ser autónomo y reutilizable. Esta estrategia no solo mejora la mantenibilidad del código, sino que también asegura que la interfaz de usuario mantenga una consistencia visual en toda la aplicación.
