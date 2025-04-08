@@ -2,6 +2,7 @@
 
 import { ChevronDownIcon, Bars3Icon } from '@heroicons/react/24/solid';
 import Navigation from './types';
+import { PrimaryButton } from '../Buttons/PrimaryButton/PrimaryButton';
 
 export const Header = () => {
   const navigation: Navigation[] = [
@@ -46,9 +47,7 @@ export const Header = () => {
         <button className="px-4 py-2 text-sm font-medium">
           Log in
         </button>
-        <button className="bg-[#7F56D9] text-white border border-[#7F56D9] rounded-md px-4 py-2 text-sm font-medium">
-          Sign up
-        </button>
+        <PrimaryButton content='Sign up'/>
 
       </div>
 

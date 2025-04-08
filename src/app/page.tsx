@@ -6,7 +6,7 @@ import { TestimonialCard } from "@/components/Home/TestimonialCard";
 import { Trial } from "@/components/Home/Trial";
 import { FrequentQuestions } from "@/components/Home/FrequentQuestions";
 import { Customers } from '@/components/Home/Customers'
-import { GetStartedCard } from "@/components/GetStartedCard";
+import { GetStartedCard } from "@/components/Home/GetStartedCard";
 
 export default function Home() {
   return (

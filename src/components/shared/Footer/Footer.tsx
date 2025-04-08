@@ -63,7 +63,7 @@ export const footerColumns: FooterColumn[] = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-white">
+    <div className="my-10">
       <div className="w-full flex flex-wrap justify-between px-4 py-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
           {footerColumns.map((column, index) => (
@@ -88,7 +88,7 @@ export const Footer = () => {
 
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 py-5">
             <h4 className="text-sm font-semibold text-gray-900 mb-2">Get the app</h4>
             <div>
               <Image
@@ -102,13 +102,12 @@ export const Footer = () => {
 
         {/* Bottom bar */}
       </div>
-        <div className="px-4 py-10 mt-10 pt-6 border-t flex items-center justify-between text-sm text-gray-500">
+        <div className="px-4 py-10 mt-10 pt-6 border-t flex flex-wrap items-center justify-between text-sm text-gray-500">
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-violet-300 to-purple-500" />
             <span className="font-medium text-gray-900">Untitled UI</span>
           </div>
           <p>© 2077 Untitled UI. All rights reserved.</p>
         </div>
-    </footer>
+    </div>
   )
 }

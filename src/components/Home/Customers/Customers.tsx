@@ -5,6 +5,8 @@ import girl from '@/assets/girl.jpeg'
 import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Customer } from './types'
+import { PrimaryButton } from '@/components/shared/Buttons/PrimaryButton'
+import { SecondaryButton } from '@/components/shared/Buttons/SecondaryButton'
 
 const customers: Customer[] = [
   {
@@ -35,31 +37,23 @@ export const Customers = () => {
     return (
 
         <div className="flex flex-col w-full py-10">
-
-            <div className="flex flex-col justify-between gap-3 w-full">
-                <div className="flex flex-col gap-6 mb-10">
-                    <div className="flex flex-row justify-between"> 
-                        
-                        <p className="text-3xl md:text-4xl font-semibold">
-                            Don’t just take our word for it
-                        </p>
-                    
-                        <div className="flex flex-row sm:flex-row gap-4 justify-center md:justify-start">
-                            <button className="px-5 py-3 border border-gray-300 text-gray-700 rounded-md text-sm font-medium bg-white hover:bg-gray-100">
-                              Our Customers
-                            </button>
-                            
-                            <button className="px-5 py-3 bg-[#7F56D9] text-white rounded-md text-sm font-medium hover:bg-[#6941C6]">
-                              Create account
-                            </button>
-                        </div>
-                    </div>
-                    <p className="text-gray-500 text-sm sm:text-base md:text-lg">
-                        Hear from some of our amazing customers who are automating their finances.
-                    </p>
+            <div className="flex flex-col w-full gap-6 mb-10 px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                  
+                  <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center md:text-left">
+                    Don’t just take our word for it
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4 items-center md:justify-end">
+                    <SecondaryButton content='Our customers'/> 
+                    <PrimaryButton content='Create account'/>
+                  </div>
                 </div>
-            </div>
-
+                  
+                <p className="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-left">
+                  Hear from some of our amazing customers who are automating their finances.
+                </p>
+              </div>
             <div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-items-center">
                     {customers.map((customer, index) => (

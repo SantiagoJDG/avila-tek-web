@@ -5,6 +5,7 @@ import {
   PresentationChartLineIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline'
+import { SecondaryTitle } from "@/components/shared/SecondaryTitle"
 
 export const Features = () => {
 
@@ -27,18 +28,13 @@ export const Features = () => {
   ]
 
   return (
-    <section className="my-10 px-4 sm:px-6">
-      {/* Title + Description */}
-      <div className="flex flex-col items-center justify-center gap-6 text-center mb-10 max-w-4xl mx-auto">
-        <p className="text-3xl font-semibold">
-          Cutting-edge features for advanced analytics
-        </p>
-        <p className="text-gray-500 text-sm sm:text-base md:text-lg px-2 sm:px-6 lg:px-8">
-          Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
-        </p>
-      </div>
-
-      {/* Feature Cards */}
+    <div className="my-10 px-4 sm:px-6">
+      
+      <SecondaryTitle
+        title="Cutting-edge features for advanced analytics"
+        subtitle="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+        />
+    
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {features.map((feature: Feature, index: number) => (
           <div
@@ -62,6 +58,6 @@ export const Features = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   )
 }

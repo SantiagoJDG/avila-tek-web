@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { PlusCircleIcon, MinusCircleIcon } from '@heroicons/react/24/outline'
 import { FaqItem } from './types'
+import { SecondaryTitle } from '@/components/shared/SecondaryTitle'
 
 const faqData: FaqItem[] = [
   {
@@ -11,23 +12,23 @@ const faqData: FaqItem[] = [
   },
   {
     question: 'Can I change my plan later?',
-    answer: 'Absolutely! You can upgrade, downgrade, or cancel your plan anytime through your dashboard.',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
   },
   {
     question: 'What is your cancellation policy?',
-    answer: 'You can cancel anytime without penalties. Your subscription will remain active until the end of the billing cycle.',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
   },
   {
     question: 'Can other info be added to an invoice?',
-    answer: 'Yes, you can add VAT info, company details, and more from your account settings before downloading invoices.',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
   },
   {
     question: 'How does billing work?',
-    answer: 'We charge monthly or annually, depending on the plan you choose. You can manage billing preferences in your account settings.',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
   },
   {
     question: 'How do I change my account email?',
-    answer: 'You can update your email in the profile settings. A confirmation email will be sent to the new address.',
+    answer: 'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
   },
 ]
 
@@ -39,16 +40,11 @@ export const FrequentQuestions = () => {
   }
 
     return (
-        <div className='py-10'>
-            <div className="flex flex-col items-center justify-center gap-6 mb-10 text-center max-w-4xl mx-auto">
-                <p className="text-3xl md:text-4xl font-semibold">
-                Frequently asked questions
-                </p>
-                <p className="text-gray-500 text-sm sm:text-base md:text-lg px-2 sm:px-6 md:px-8">
-                Everything you need to know about the product and billing.
-                </p>
-            </div>
-            
+      <div className='py-10'>
+            <SecondaryTitle
+              title='Frequently asked questions'
+              subtitle='Everything you need to know about the product and billing.'
+            /> 
             <div className="max-w-3xl mx-auto p-4 rounded-xl">
             {faqData.map((item, index) => (
                 <div key={index} className="border-b">

@@ -7,6 +7,7 @@ import notion from '@/assets/notion.jpg'
 import slack from '@/assets/slack.png'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { Tool } from './types'
+import { SecondaryTitle } from '@/components/shared/SecondaryTitle'
 
 export const IntegrationTools = () => { 
 
@@ -44,16 +45,12 @@ export const IntegrationTools = () => {
     ]
 
     return (
-        <div> 
-            <div className="flex flex-col items-center gap-6 m-10 w-100%">
-                    <p className="text-3xl font-bold text-center">
-                        Get more value from your tools
-                    </p>
-                    <p className="text-center text-sm sm:text-base md:text-lg text-gray-700 px-4 md:3/4 lg:w-1/2 xl:w-1/2">
-                        Connect your tools, connect your teams. With over 100 apps already available in our directory, your teams favourite tools are just a click away.
-                    </p>
-            </div>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 p-5'>
+        <div className='m-10'> 
+            <SecondaryTitle
+                title='Get more value from your tools'
+                subtitle='Connect your tools, connect your teams. With over 100 apps already available in our directory, your teams favourite tools are just a click away.'
+            />
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 p-5'>
                 {tools.map((tool: Tool, index: number) => (
                     <div className='flex flex-col items-center justify-center gap-5 p-4' key={index}>
                         <Image
