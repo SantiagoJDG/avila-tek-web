@@ -30,19 +30,19 @@ export const PrincipalCard = () => {
 
           <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
             <div className="flex flex-col">           
-              <div className="flex flex-row gap-4">
-                <div className="flex w-full flex-wrap sm:w-[335px] h-12 border border-gray-300 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#7F56D9]">
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    className="flex-1 px-[14px] py-[14px] text-sm focus:outline-none"
-                  />
-                  <div className="flex items-center justify-center px-3 bg-white">
-                    <QuestionMarkCircleIcon className="w-5 h-5 text-gray-400" />
+                <div className="flex flex-col sm:flex-row gap-4 w-full">
+                  <div className="flex w-full sm:w-[335px] h-12 border border-gray-300 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#7F56D9]">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      className="flex-1 px-[14px] py-[14px] text-sm focus:outline-none"
+                    />
+                    <div className="flex items-center justify-center px-3 bg-white">
+                      <QuestionMarkCircleIcon className="w-5 h-5 text-gray-400" />
+                    </div>
                   </div>
+                  <PrimaryButton content="Get started"/>
                 </div>
-                  <PrimaryButton content="Get started" />
-              </div>
                 <p className="text-xs text-[#E9D7FE] mt-2">
                     We care about your data in our privacy policy.
                 </p>
